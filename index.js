@@ -6,8 +6,9 @@ form.addEventListener("submit", (e) => {
   const checkedAnswer = radio.filter((answer) => answer.checked)
   checkedAnswer.forEach((answer) => {
     const isCorrect = answer.value === "correct"
+    const quistonItem = answer.closest(".form-check")
     if (isCorrect) {
-      isCorrect.style.backgroundColor = "blue"
+      quistonItem.classList.add()
     } else {
     }
   })
