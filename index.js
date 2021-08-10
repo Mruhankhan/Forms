@@ -1,7 +1,14 @@
 let form = document.getElementById("form")
-let radio = document.getElementsByClassName("radio")
+let radio = Array.from(document.getElementsByClassName("form-check-input"))
+
 form.addEventListener("submit", (e) => {
-  if (radio.value === "wrong") {
-    alert()
-  }
+  e.preventDefault()
+  const checkedAnswer = radio.filter((answer) => answer.checked)
+  checkedAnswer.forEach((answer) => {
+    const isCorrect = answer.value === "correct"
+    if (checkedAnswer.value === "correct") {
+      checkedAnswer.style.backgroundColor = "blue"
+    } else {
+    }
+  })
 })

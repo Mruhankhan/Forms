@@ -4,49 +4,57 @@
         <title>Forms</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <form>
-        
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="Name" aria-describedby="emailHelpId"
-                placeholder="Please Enter name">
-            <small id="emailHelpId" class="form-text text-muted">What sould we call you?</small>
-        </div>
-        <div class="form-group">
-            <label for="last-name">Name</label>
-            <input type="text" class="form-control" name="last-name" id="last-name" aria-describedby="emailHelpId"
-                placeholder="Please Enter last name">
-            <small id="emailHelpId" class="form-text text-muted">Enter Your last name</small>
-        </div>
-        <div class="form-group">
-            <label for="email"></label>
-            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
-                placeholder="Enter You email">
-            <small id="emailHelpId" class="form-text text-muted">Enter Your Email</small>
-        </div>
-        <hr>
-        <h1>Question One</h1>
-        <div class="form-check" >
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="name" id="radio" value="wrong" checked> Display value </label>
-        </div>
-        <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="name" id="radio" value="wrong" checked> Display vaalue </label>
-        </div>
-        <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="name" id="radio" value="wrong" checked> Display valaue </label>
-        </div>
-        <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="name" id="radio" value="correct" checked> Display value </label>
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
+    <div class="correct"></div>
+    <div class="wrong"></div>
+
+        <form id="form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" id="Name" aria-describedby="emailHelpId"
+                    placeholder="Please Enter name">
+                <small id="emailHelpId" class="form-text text-muted">What sould we call you?</small>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Name</label>
+                <input type="text" class="form-control" name="last-name" id="last-name" aria-describedby="emailHelpId"
+                    placeholder="Please Enter last name">
+                <small id="emailHelpId" class="form-text text-muted">Enter Your last name</small>
+            </div>
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                    placeholder="Enter You email">
+                <small id="emailHelpId" class="form-text text-muted">Enter Your Email</small>
+            </div>
+            <hr>
+            <h1>Question One</h1>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="name" id="radio" value="wrong"> Display
+                    value </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="name" id="radio" value="wrong" > Display
+                    vaalue </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="name" id="radio" value="wrong"> Display
+                    valaue </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="name" id="radio" value="correct" > Display
+                    value </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
     </body>
+
 </html>
