@@ -6,8 +6,8 @@ form.addEventListener("submit", (e) => {
   const checkedAnswer = radio.filter((answer) => answer.checked)
   checkedAnswer.forEach((answer) => {
     const isCorrect = answer.value === "correct"
-    if (checkedAnswer.value === "correct") {
-      checkedAnswer.style.backgroundColor = "blue"
+    if (isCorrect) {
+      isCorrect.style.backgroundColor = "blue"
     } else {
     }
   })
