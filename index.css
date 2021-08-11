@@ -1,3 +1,6 @@
-.form-li{
-    background-color: blue;
+.form-li-correct{
+ color: green;
 }
+.form-check.form-li-wrong{
+    color: red;
+   }
