@@ -3,4 +3,11 @@
 }
 .form-check.form-li-wrong{
     color: red;
-   }
+}
+button{
+    width: 200px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
